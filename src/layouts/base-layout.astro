@@ -1,0 +1,31 @@
+---
+import Navigation from '../components/navigation.astro';
+import '../styles/fonts/open-sans.scss';
+import '../styles/global.scss';
+
+const { pageTitle } = Astro.props;
+---
+
+<script>
+  import '../scripts/router';
+</script>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle ? `${pageTitle} – kasasi` : 'kasasi'}</title>
+  </head>
+
+  <body>
+    <div class="mx-auto max-w-112 md:max-w-144 lg:max-w-192 xl:max-w-256">
+      <Navigation />
+
+      <div class="py-20">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>

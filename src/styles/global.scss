@@ -1,0 +1,79 @@
+.light-theme {
+  --color-kasasi-blue: 0 37 66;
+  --color-kasasi-red: 234 81 83;
+  --color-kasasi-blue-light: 229 232 235;
+  --color-kasasi-green: 73 137 113;
+  --color-black: 0 0 0;
+  --color-white: 255 255 255;
+
+  --color-function-red: 227 0 0;
+  --color-function-orange: 255 108 0;
+  --color-function-green: 110 145 20;
+  --color-function-cyan: 0 158 226;
+  --color-function-purple: 126 72 167;
+  --color-function-blue-light: 237 246 255;
+
+  --color-gray-100: 246 246 246;
+  --color-gray-200: 229 229 229;
+  --color-gray-300: 214 214 214;
+  --color-gray-400: 196 196 196;
+  --color-gray-500: 149 152 154;
+  --color-gray-600: 132 132 132;
+  --color-gray-700: 110 108 108;
+  --color-gray-800: 75 73 73;
+
+  --color-header: 255 255 255;
+  --color-header-combi: 0 37 66;
+  --color-navbar: 0 37 66;
+  --color-navbar-combi: 255 255 255;
+  --color-button-primary: 234 81 83;
+  --color-button-primary-combi: 255 255 255;
+  --color-button-secondary: 0 37 66;
+  --color-button-secondary-combi: 255 255 255;
+  --color-highlight: 234 81 83;
+  --color-text: 0 37 66;
+}
+
+.dark-theme {
+  --color-kasasi-blue: 206 212 217;
+  --color-kasasi-red: 247 99 106;
+  --color-kasasi-blue-light: 26 26 26;
+  --color-kasasi-green: 87 150 127;
+  --color-black: 242 242 242;
+  --color-white: 38 38 38;
+
+  --color-function-red: 255 64 64;
+  --color-function-orange: 255 143 64;
+  --color-function-green: 147 184 53;
+  --color-function-cyan: 38 190 251;
+  --color-function-purple: 167 118 204;
+  --color-function-blue-light: 55 60 64;
+
+  --color-gray-100: 51 51 51;
+  --color-gray-200: 64 64 64;
+  --color-gray-300: 77 77 77;
+  --color-gray-400: 102 102 102;
+  --color-gray-500: 128 128 128;
+  --color-gray-600: 133 133 133;
+  --color-gray-700: 140 140 140;
+  --color-gray-800: 153 153 153;
+
+  --color-header: 41 41 41;
+  --color-header-combi: 208 215 219;
+  --color-navbar: 64 64 64;
+  --color-navbar-combi: 242 242 242;
+  --color-button-primary: 247 99 106;
+  --color-button-primary-combi: 13 13 13;
+  --color-button-secondary: 23 77 117;
+  --color-button-secondary-combi: 242 242 242;
+  --color-highlight: 247 99 106;
+  --color-text: 208 215 219;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @apply h-full w-full light-theme font-sans text-base text-black bg-white overflow-x-hidden;
+}
